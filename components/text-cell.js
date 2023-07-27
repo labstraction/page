@@ -1,11 +1,12 @@
 export class TextCell extends HTMLElement {
 
     constructor(){
-      this.setAttribute('contenteditable', true);
+      
     }
 
 
     connectedCallback() {
+      this.setAttribute('contenteditable', true);
       this.textContent = 'Hello World!';
     }
   
